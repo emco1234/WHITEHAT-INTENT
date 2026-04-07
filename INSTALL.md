@@ -8,7 +8,6 @@ git clone https://github.com/emco1234/WHITEHAT-INTENT.git /tmp/whitehat-intent
 
 # Back up existing config
 cp ~/.config/opencode/opencode.json ~/.config/opencode/opencode.json.backup 2>/dev/null
-cp ~/.config/opencode/oh-my-opencode.json ~/.config/opencode/oh-my-opencode.json.backup 2>/dev/null
 
 # Done! WHITEHAT-INTENT auto-creates .intent/specs/ on first use.
 # Now merge the agent definitions into your opencode.json
@@ -23,11 +22,7 @@ Copy the 5 agent entries from `config/opencode/agents.json` into your `~/.config
 
 Replace `"CHANGE_ME_TO_YOUR_MODEL"` with your actual model (e.g., `"anthropic/claude-sonnet-4-5"`, `"openai/gpt-4o"`, etc.).
 
-### 2. Add categories to `oh-my-opencode.json`
-
-Copy the 4 category entries from `config/oh-my-opencode/categories.json` into your `~/.config/opencode/oh-my-opencode.json` under the `"categories"` key.
-
-### 3. Set default agent
+### 2. Set default agent
 
 In your `opencode.json`, set:
 ```json
@@ -36,7 +31,7 @@ In your `opencode.json`, set:
 }
 ```
 
-### 4. Add Context7 MCP (required)
+### 3. Add Context7 MCP (required)
 
 In your `opencode.json`, under `"mcp"`, add:
 ```json
@@ -50,7 +45,7 @@ In your `opencode.json`, under `"mcp"`, add:
 }
 ```
 
-### 5. Restart OpenCode
+### 4. Restart OpenCode
 
 ```bash
 opencode

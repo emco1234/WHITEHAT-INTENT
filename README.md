@@ -371,7 +371,6 @@ See [`docs/RESEARCH.md`](docs/RESEARCH.md) for the full analysis.
 | Tool | Purpose | Install |
 |---|---|---|
 | [OpenCode](https://opencode.ai) | Agent runtime | `go install github.com/opencode-ai/opencode@latest` |
-| [oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode) | Plugin system | See their README |
 | [Context7 MCP](https://github.com/upstash/context7-mcp) | Stack guidance | Configured via MCP |
 | [Biome](https://biomejs.dev/) | Linting | `npm install -g @biomejs/biome` |
 
@@ -383,7 +382,6 @@ git clone https://github.com/emco1234/WHITEHAT-INTENT.git /tmp/whitehat-intent
 
 # 2. Back up your existing config
 cp ~/.config/opencode/opencode.json ~/.config/opencode/opencode.json.backup 2>/dev/null
-cp ~/.config/opencode/oh-my-opencode.json ~/.config/opencode/oh-my-opencode.json.backup 2>/dev/null
 
 # 3. Done! WHITEHAT-INTENT auto-creates .intent/specs/ on first use.
 # No manual setup needed — just start working.
@@ -398,11 +396,7 @@ opencode
 
 Copy the 5 agent entries from [`config/opencode/agents.json`](config/opencode/agents.json) into your `"agent"` section. Replace `"CHANGE_ME_TO_YOUR_MODEL"` with your model.
 
-**Step 2** — Add categories to `~/.config/opencode/oh-my-opencode.json`:
-
-Copy the 4 category entries from [`config/oh-my-opencode/categories.json`](config/oh-my-opencode/categories.json) into your `"categories"` section.
-
-**Step 3** — Set as default agent:
+**Step 2** — Set as default agent:
 
 ```json
 {
@@ -410,7 +404,7 @@ Copy the 4 category entries from [`config/oh-my-opencode/categories.json`](confi
 }
 ```
 
-**Step 4** — Add Context7 MCP (required):
+**Step 3** — Add Context7 MCP (required):
 
 ```json
 {
@@ -425,7 +419,7 @@ Copy the 4 category entries from [`config/oh-my-opencode/categories.json`](confi
 }
 ```
 
-**Step 5** — (Optional) Add browser verification MCP for frontend work:
+**Step 4** — (Optional) Add browser verification MCP for frontend work:
 
 ```json
 {
@@ -484,10 +478,8 @@ WHITEHAT-INTENT/
 ├── INSTALL.md                             ← Quick-install reference
 │
 ├── config/
-│   ├── opencode/
-│   │   └── agents.json                    ← 5 agent definitions (merge into opencode.json)
-│   └── oh-my-opencode/
-│       └── categories.json                ← 4 category definitions (merge into oh-my-opencode.json)
+│   └── opencode/
+│       └── agents.json                    ← 5 agent definitions (merge into opencode.json)
 │
 ├── intent-specs/
 │   ├── template.md                        ← Living spec template
@@ -526,6 +518,7 @@ WHITEHAT-INTENT/
 | Multi-agent coordination | **5 agents** | Single agent | Single agent | N/A |
 | Research-backed | **33k+ PRs** | No | No | No |
 | Integration regression | **Cross-wave** | No | No | No |
+| Plugin dependency | **None** | N/A | N/A | N/A |
 
 ---
 
@@ -539,7 +532,7 @@ WHITEHAT-INTENT/
 
 **Created by** [Krypto Whitehat](https://x.com/Krypto_Whitehat)
 
-Built on [OpenCode](https://opencode.ai) + [oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode)
+Built on [OpenCode](https://opencode.ai)
 
 Research-backed: [Ehsani et al.](https://arxiv.org/abs/2601.15195) · [Böckeler](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html) · [Mitchinson](https://www.nrmitchi.com/2025/10/using-git-worktrees-for-multi-feature-development-with-ai-agents/) · [Intent](https://intent.dev)
 
