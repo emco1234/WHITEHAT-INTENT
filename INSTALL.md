@@ -10,11 +10,8 @@ git clone https://github.com/emco1234/WHITEHAT-INTENT.git /tmp/whitehat-intent
 cp ~/.config/opencode/opencode.json ~/.config/opencode/opencode.json.backup 2>/dev/null
 cp ~/.config/opencode/oh-my-opencode.json ~/.config/opencode/oh-my-opencode.json.backup 2>/dev/null
 
-# Install spec template
-mkdir -p ~/.intent/specs
-cp /tmp/whitehat-intent/intent-specs/template.md ~/.intent/specs/template.md
-
-# Done! Now merge the agent definitions into your opencode.json
+# Done! WHITEHAT-INTENT auto-creates .intent/specs/ on first use.
+# Now merge the agent definitions into your opencode.json
 # See README.md "Step 3" for details
 ```
 

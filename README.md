@@ -385,9 +385,8 @@ git clone https://github.com/emco1234/WHITEHAT-INTENT.git /tmp/whitehat-intent
 cp ~/.config/opencode/opencode.json ~/.config/opencode/opencode.json.backup 2>/dev/null
 cp ~/.config/opencode/oh-my-opencode.json ~/.config/opencode/oh-my-opencode.json.backup 2>/dev/null
 
-# 3. Install the living spec template
-mkdir -p ~/.intent/specs
-cp /tmp/whitehat-intent/intent-specs/template.md ~/.intent/specs/template.md
+# 3. Done! WHITEHAT-INTENT auto-creates .intent/specs/ on first use.
+# No manual setup needed — just start working.
 
 # 4. Restart OpenCode
 opencode
@@ -508,7 +507,7 @@ WHITEHAT-INTENT/
 | JSON parse error | Validate: `node -e "JSON.parse(require('fs').readFileSync('~/.config/opencode/opencode.json','utf8'))"` |
 | Context7 not connecting | Run `opencode mcp list` and verify npx is in PATH |
 | Biome not found | `npm install -g @biomejs/biome` |
-| Spec not found | `mkdir -p .intent/specs && cp intent-specs/template.md .intent/specs/template.md` |
+| Spec not found | Auto-created on first use — no manual action needed |
 
 ---
 
