@@ -13,7 +13,7 @@ The living spec is the source of truth. Code is generated downstream. The spec a
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![5 Agents](https://img.shields.io/badge/Agents-5%20Specialists-orange)](#-multi-agent-architecture)
 
-[Installation](#-installation--5-minutes) · [Features](#-features-14-research-backed-capabilities) · [Architecture](#-multi-agent-architecture) · [Research](#-built-on-science-not-opinions) · [Configuration](#-configuration)
+[Installation](#-installation--5-minutes) · [Features](#-features-15-research-backed-capabilities) · [Architecture](#-multi-agent-architecture) · [Research](#-built-on-science-not-opinions) · [Configuration](#-configuration)
 
 Created by **[Krypto Whitehat](https://x.com/Krypto_Whitehat)**
 
@@ -40,7 +40,7 @@ Each guardrail is derived from empirical data — not opinions. Each feature map
 
 ---
 
-## Features (14 Research-Backed Capabilities)
+## Features (15 Research-Backed Capabilities)
 
 ### Spec-Driven Development Core
 
@@ -252,6 +252,23 @@ Verbose specs create "review overload" — agents and humans stop reading carefu
 
 </details>
 
+<details>
+<summary><b>15. Compounding Wiki — augments.md (Karpathy-Inspired)</b></summary>
+
+Inspired by [Andrej Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), WHITEHAT-INTENT maintains a persistent codebase knowledge base that compounds across sessions.
+
+While `current.md` tracks the current task, `augments.md` tracks the codebase itself. It remembers what the agent learned last time — so it doesn't re-crawl from scratch every session.
+
+- **First visit**: Agent crawls the codebase and writes `.intent/specs/augments.md`
+- **Return visits**: Agent checks freshness via git log. If fresh, reads augments.md in seconds instead of minutes
+- **After edits**: Updates augments.md to reflect changes
+- **Contents**: File index with semantic categories, architecture map, dependency graph, convention notes
+- **Result**: Semantic searches (ast-grep, ripgrep) become precise because the agent already knows WHERE to look
+
+*Based on: Karpathy (2026) — [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) — "The wiki is a persistent, compounding artifact"*
+
+</details>
+
 ---
 
 ## Multi-Agent Architecture
@@ -383,7 +400,7 @@ git clone https://github.com/emco1234/WHITEHAT-INTENT.git /tmp/whitehat-intent
 # 2. Back up your existing config
 cp ~/.config/opencode/opencode.json ~/.config/opencode/opencode.json.backup 2>/dev/null
 
-# 3. Done! WHITEHAT-INTENT auto-creates .intent/specs/ on first use.
+# 3. Done! WHITEHAT-INTENT auto-creates .intent/specs/ (including current.md and augments.md) on first use.
 # No manual setup needed — just start working.
 
 # 4. Restart OpenCode
