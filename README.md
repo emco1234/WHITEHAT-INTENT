@@ -15,7 +15,9 @@ The living spec is the source of truth. Code is generated downstream. The spec a
 
 [Installation](#-installation--5-minutes) · [Features](#-features-15-research-backed-capabilities) · [Architecture](#-multi-agent-architecture) · [Research](#-built-on-science-not-opinions) · [Configuration](#-configuration)
 
-Created by **[Krypto Whitehat](https://x.com/Krypto_Whitehat)**
+Developed by **Emir Corovic** ([Krypto Whitehat](https://x.com/Krypto_Whitehat))
+
+[werbeagentur-ice.de](https://werbeagentur-ice.de/) · [contentplanning.ai](https://contentplanning.ai/) · [suchfokus.de](https://suchfokus.de/)
 
 </div>
 
@@ -547,7 +549,9 @@ WHITEHAT-INTENT/
 
 <div align="center">
 
-**Created by** [Krypto Whitehat](https://x.com/Krypto_Whitehat)
+**Developed by** Emir Corovic ([Krypto Whitehat](https://x.com/Krypto_Whitehat))
+
+[werbeagentur-ice.de](https://werbeagentur-ice.de/) · [contentplanning.ai](https://contentplanning.ai/) · [suchfokus.de](https://suchfokus.de/)
 
 Built on [OpenCode](https://opencode.ai)
 
